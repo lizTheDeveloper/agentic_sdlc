@@ -2,3 +2,107 @@
 2025-07-07 17:48:54.217 | INFO     | app.db:connect:14 - Database connection pool created.
 2025-07-07 17:48:54.227 | INFO     | __main__:init_db:11 - Database schema initialized.
 2025-07-07 17:48:54.230 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 17:55:07.906 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 17:55:07.913 | INFO     | __main__:init_db:11 - Database schema initialized.
+2025-07-07 17:55:07.915 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 18:19:29.427 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 18:19:29.435 | INFO     | __main__:init_db:11 - Database schema initialized.
+2025-07-07 18:19:29.437 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 18:21:35.614 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 18:21:35.622 | INFO     | __main__:init_db:11 - Database schema initialized.
+2025-07-07 18:21:35.625 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:38:09.116 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:38:09.117 | INFO     | __main__:init_db:11 - Database schema initialized.
+2025-07-07 20:38:09.119 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:41:19.651 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:41:19.954 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:43:09.502 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:43:09.653 | WARNING  | app.main:dependency:85 - Unauthorized access attempt by instructor@example.com (role: None), required: instructor
+2025-07-07 20:43:09.661 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:43:55.612 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:43:55.746 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:44:17.725 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:44:17.864 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:44:45.879 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:44:46.249 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:50:45.949 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:50:45.973 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:51:05.814 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:51:05.929 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:51:05.959 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:51:33.403 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:51:33.440 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:51:33.727 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:51:56.288 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:51:56.326 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:51:56.611 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:52:34.127 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:52:34.162 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:52:34.444 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:52:53.441 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:52:53.478 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:52:53.770 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:53:11.387 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:53:11.424 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:53:11.427 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:53:11.483 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:53:11.513 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:53:11.544 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:53:11.701 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:53:11.768 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:53:11.797 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:53:11.829 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:53:11.966 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:53:56.888 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:53:56.952 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:53:56.955 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:53:57.015 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:53:57.045 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:53:57.076 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:53:57.080 | INFO     | app.main:submit_assignment:523 - Submission created/updated: 1
+2025-07-07 20:53:57.081 | INFO     | app.main:submit_assignment:523 - Submission created/updated: 1
+2025-07-07 20:53:57.082 | INFO     | app.main:list_submissions:530 - Submissions listed for assignment 1
+2025-07-07 20:53:57.083 | INFO     | app.main:list_user_submissions:537 - Submissions listed for user 1
+2025-07-07 20:53:57.085 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:53:57.141 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:53:57.172 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:53:57.205 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:53:57.207 | INFO     | app.main:submit_assignment:523 - Submission created/updated: 1
+2025-07-07 20:53:57.209 | INFO     | app.main:dependency:87 - Role check passed for instructor@example.com as instructor
+2025-07-07 20:53:57.210 | INFO     | app.main:grade_submission:553 - Grade created/updated: 1
+2025-07-07 20:53:57.211 | INFO     | app.main:list_grades:560 - Grades listed for submission 1
+2025-07-07 20:53:57.212 | INFO     | app.main:dependency:87 - Role check passed for instructor@example.com as instructor
+2025-07-07 20:53:57.382 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:55:31.655 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:55:31.709 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:55:31.711 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:55:31.766 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:55:31.800 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:55:31.833 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:55:31.836 | INFO     | app.main:submit_assignment:523 - Submission created/updated: 1
+2025-07-07 20:55:31.838 | INFO     | app.main:submit_assignment:523 - Submission created/updated: 1
+2025-07-07 20:55:31.839 | INFO     | app.main:list_submissions:530 - Submissions listed for assignment 1
+2025-07-07 20:55:31.840 | INFO     | app.main:list_user_submissions:537 - Submissions listed for user 1
+2025-07-07 20:55:31.842 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:55:31.899 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 20:55:31.929 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:55:31.962 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 20:55:31.965 | INFO     | app.main:submit_assignment:523 - Submission created/updated: 1
+2025-07-07 20:55:31.966 | INFO     | app.main:dependency:87 - Role check passed for instructor@example.com as instructor
+2025-07-07 20:55:31.967 | INFO     | app.main:grade_submission:553 - Grade created/updated: 1
+2025-07-07 20:55:31.968 | INFO     | app.main:list_grades:560 - Grades listed for submission 1
+2025-07-07 20:55:31.969 | INFO     | app.main:dependency:87 - Role check passed for instructor@example.com as instructor
+2025-07-07 20:55:31.969 | INFO     | app.main:instructor_assignments:575 - Assignments to grade listed for instructor 2
+2025-07-07 20:55:31.970 | INFO     | app.main:student_assignments:583 - Assignments listed for student 1
+2025-07-07 20:55:31.972 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 21:01:58.827 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 21:02:02.272 | INFO     | app.main:request_login_code:47 - Auth code generated for lizthedeveloper@gmail.com
+2025-07-07 21:02:02.273 | WARNING  | app.main:request_login_code:65 - SendGrid not configured; email not sent.
+2025-07-07 21:04:19.235 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 21:04:19.634 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 21:04:59.126 | INFO     | app.main:request_login_code:50 - Auth code generated for lizthedeveloper@gmail.com
+2025-07-07 21:04:59.126 | WARNING  | app.main:request_login_code:68 - SendGrid not configured; email not sent.
+2025-07-07 21:08:29.046 | INFO     | app.db:disconnect:22 - Database connection pool closed.
+2025-07-07 21:08:30.388 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 21:08:41.884 | INFO     | app.main:request_login_code:50 - Auth code generated for lizthedeveloper@gmail.com
+2025-07-07 21:08:42.376 | INFO     | app.main:request_login_code:64 - Magic link sent to lizthedeveloper@gmail.com via SendGrid
