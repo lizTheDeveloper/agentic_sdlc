@@ -567,8 +567,8 @@ async def instructor_assignments(instructor_id: int):
         rows = await conn.fetch(
             """
             SELECT s.* FROM submissions s
-            JOIN assignments a ON s.assignment_id = a.id
-            WHERE a.instructor_id = $1
+            JOIN grades g ON s.id = g.submission_id
+            WHERE g.grader_id = $1
             """,
             instructor_id
         )
