@@ -5,6 +5,9 @@ from app.app_logging import app_logger as logger
 from app.db import db
 from app.models import USER_TABLE_DDL
 from typing import List, Optional
+import os
+from sendgrid import SendGridAPIClient
+from sendgrid.helpers.mail import Mail
 
 app = FastAPI()
 
@@ -42,8 +45,28 @@ async def request_login_code(payload: LoginRequest):
             """, payload.email, code, expires_at
         )
         logger.info(f"Auth code generated for {payload.email}")
-    # In production, send code via email. For now, return it for testing.
-    return {"message": "Auth code sent", "code": code}
+    # Send code via SendGrid
+    sendgrid_api_key = os.getenv("SENDGRID_API_KEY")
+    sendgrid_from_email = os.getenv("SENDGRID_FROM_EMAIL")
+    if sendgrid_api_key and sendgrid_from_email:
+        message = Mail(
+            from_email=sendgrid_from_email,
+            to_emails=payload.email,
+            subject="Your Magic Login Code",
+            html_content=f"<p>Your login code is: <b>{code}</b></p>"
+        )
+        try:
+            sg = SendGridAPIClient(sendgrid_api_key)
+            sg.send(message)
+            logger.info(f"Magic link sent to {payload.email} via SendGrid")
+        except Exception as e:
+            logger.error(f"Failed to send magic link email: {e}")
+    else:
+        logger.warning("SendGrid not configured; email not sent.")
+    # Only return code in response if not in production
+    if os.getenv("ENV") != "production":
+        return {"message": "Auth code sent", "code": code}
+    return {"message": "Auth code sent"}
 
 @app.post("/auth/verify_code")
 async def verify_login_code(payload: VerifyCodeRequest):

@@ -126,6 +126,7 @@ Excluded Features (for now):
 	•	Video Integration: Jitsi Meet API iframe embed
 	•	Payment Integration: Stripe Checkout + Webhooks for enrollment access
 	•	APIs: RESTful or GraphQL for internal data exchange
+	•	Email Delivery: SendGrid is used for sending magic link authentication codes from the backend. Configure SENDGRID_API_KEY and SENDGRID_FROM_EMAIL in the environment.
 
 ⸻
 
