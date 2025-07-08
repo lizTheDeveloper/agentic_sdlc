@@ -1,0 +1,4 @@
+2025-07-07 17:48:05.970 | ERROR    | app.db:connect:16 - Failed to create database pool: Multiple exceptions: [Errno 61] Connect call failed ('::1', 5432, 0, 0), [Errno 61] Connect call failed ('127.0.0.1', 5432)
+2025-07-07 17:48:54.217 | INFO     | app.db:connect:14 - Database connection pool created.
+2025-07-07 17:48:54.227 | INFO     | __main__:init_db:11 - Database schema initialized.
+2025-07-07 17:48:54.230 | INFO     | app.db:disconnect:22 - Database connection pool closed.
