@@ -1,6 +1,6 @@
 import asyncio
 from app.db import db
-from app.models import USER_TABLE_DDL
+from app.models import USER_TABLE_DDL  # Includes curriculum, lessons, and assignments tables
 from app.app_logging import app_logger as logger
 
 async def init_db():

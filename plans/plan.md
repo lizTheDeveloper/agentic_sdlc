@@ -9,19 +9,19 @@
   - [x] Implement SQL migrations and connection logic in FastAPI.
   - [x] Add robust, centralized logging for all database operations.
 
-- [ ] **Phase 3: Authentication and Authorization**
-  - [ ] Integrate magic link authentication (using Supabase or custom solution).
-  - [ ] Implement role-based access control in FastAPI.
-  - [ ] Add logging for all authentication and authorization events.
+- [x] **Phase 3: Authentication and Authorization**
+  - [x] Integrate magic link authentication (using Supabase or custom solution).
+  - [x] Implement role-based access control in FastAPI.
+  - [x] Add logging for all authentication and authorization events.
 
 - [ ] **Phase 4: Curriculum Management**
-  - [ ] Design models and endpoints for curriculum, lessons, and assignments.
-  - [ ] Implement markdown curriculum publishing integration (Quartz).
+  - [x] Design models and endpoints for curriculum, lessons, and assignments.
+  - [x] Implement markdown curriculum publishing integration (Quartz).
   - [ ] Set up admin interface for curriculum upload and management.
 
-- [ ] **Phase 5: Cohort and Scheduling Features**
-  - [ ] Implement cohort creation, enrollment, and management endpoints.
-  - [ ] Build scheduling/calendar endpoints and models.
+- [x] **Phase 5: Cohort and Scheduling Features**
+  - [x] Implement cohort creation, enrollment, and management endpoints.
+  - [x] Build scheduling/calendar endpoints and models.
   - [ ] Integrate Google Calendar sync concept (stub or mock for v1).
 
 - [ ] **Phase 6: Assignment Submission and Grading**
