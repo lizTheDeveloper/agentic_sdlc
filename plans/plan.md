@@ -24,10 +24,10 @@
   - [x] Build scheduling/calendar endpoints and models.
   - [ ] Integrate Google Calendar sync concept (stub or mock for v1).
 
-- [ ] **Phase 6: Assignment Submission and Grading**
-  - [ ] Implement endpoints for assignment submission, file uploads, and grading.
-  - [ ] Build instructor dashboard for grading and feedback.
-  - [ ] Add student dashboard for assignment tracking.
+- [x] **Phase 6: Assignment Submission and Grading**
+  - [x] Implement endpoints for assignment submission, file uploads, and grading.
+  - [x] Build instructor dashboard for grading and feedback.
+  - [x] Add student dashboard for assignment tracking.
 
 - [ ] **Phase 7: Notifications and Changelogs**
   - [ ] Implement notification system for assignment deadlines, schedule changes, and announcements.

@@ -538,7 +538,7 @@ async def list_user_submissions(user_id: int):
         return [dict(row) for row in rows]
 
 # Grading Endpoints
-@app.post("/grades", response_model=GradeOut, dependencies=[role_required("instructor")])
+@app.post("/grades", response_model=GradeOut, dependencies=[role_required('instructor')])
 async def grade_submission(grade: GradeCreate):
     async with db.pool.acquire() as conn:
         row = await conn.fetchrow(
@@ -561,21 +561,18 @@ async def list_grades(submission_id: int):
         return [dict(row) for row in rows]
 
 # Instructor Dashboard Endpoint
-@app.get("/instructor/assignments/{instructor_id}", response_model=List[SubmissionOut], dependencies=[role_required("instructor")])
+@app.get("/instructor/assignments/{instructor_id}", response_model=List[SubmissionOut], dependencies=[role_required('instructor')])
 async def instructor_assignments(instructor_id: int):
     async with db.pool.acquire() as conn:
         rows = await conn.fetch(
             """
             SELECT s.* FROM submissions s
             JOIN assignments a ON s.assignment_id = a.id
-            JOIN curriculum c ON a.curriculum_id = c.id
-            JOIN cohorts co ON c.cohort_id = co.id
-            JOIN users u ON co.id = u.cohort_id
-            WHERE u.id = $1
+            WHERE a.instructor_id = $1
             """,
             instructor_id
         )
-        logger.info(f"Instructor {instructor_id} dashboard assignments listed")
+        logger.info(f"Assignments to grade listed for instructor {instructor_id}")
         return [dict(row) for row in rows]
 
 # Student Dashboard Endpoint
@@ -583,5 +580,5 @@ async def instructor_assignments(instructor_id: int):
 async def student_assignments(user_id: int):
     async with db.pool.acquire() as conn:
         rows = await conn.fetch("SELECT * FROM submissions WHERE user_id=$1", user_id)
-        logger.info(f"Student {user_id} dashboard assignments listed")
+        logger.info(f"Assignments listed for student {user_id}")
         return [dict(row) for row in rows] 
