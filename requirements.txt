@@ -1,6 +1,6 @@
 fastapi==0.116.0
 asyncpg==0.30.0
 uvicorn[standard]==0.35.0
-python-dotenv==1.1.1
+python-dotenv==1.2.2
 loguru==0.7.3 
 sendgrid==6.12.4 
