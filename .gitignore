@@ -1,50 +1,42 @@
 ```
-# Database
-vendorshield/backend/vendorshield.db
-
-# Logs
-vendorshield/frontend.log
-vendorshield/server.log
-
-# Environment
-.env
-.env.local
-*.env.*
-
-# Dependencies
-node_modules/
-.venv/
-venv/
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.db
 
-# Build artifacts
-dist/
-build/
-target/
+# Dependencies
+.venv/
+venv/
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+*.sqlite3
+*.sqlite3-journal
+
+# Environment
+.env
+.env.local
+.env.dev
+.env.prod
+.env.backup
+*.env.*
 
 # Editors
 .vscode/
 .idea/
 *.swp
 *.swo
-
-# OS
+*~
 .DS_Store
 Thumbs.db
-
-# Coverage
-.coverage
-coverage/
-htmlcov/
-
-# Python specific
-*.pyc
-__pycache__/
-*.pyo
-*.pyd
-.Python
-*.so
 ```
