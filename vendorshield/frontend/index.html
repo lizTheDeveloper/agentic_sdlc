@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VendorShield - AI Vendor Risk Assessment</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🛡️ VendorShield</h1>
+            <p class="tagline">AI Vendor Risk Assessment Tool</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Stats Section -->
+        <section class="stats-section" id="statsSection">
+            <div class="stat-card stat-total">
+                <div class="stat-value" id="totalVendors">0</div>
+                <div class="stat-label">Total Vendors</div>
+            </div>
+            <div class="stat-card stat-high">
+                <div class="stat-value" id="highRiskCount">0</div>
+                <div class="stat-label">High Risk</div>
+            </div>
+            <div class="stat-card stat-medium">
+                <div class="stat-value" id="mediumRiskCount">0</div>
+                <div class="stat-label">Medium Risk</div>
+            </div>
+            <div class="stat-card stat-low">
+                <div class="stat-value" id="lowRiskCount">0</div>
+                <div class="stat-label">Low Risk</div>
+            </div>
+            <div class="stat-card stat-avg">
+                <div class="stat-value" id="avgRiskScore">0</div>
+                <div class="stat-label">Avg Risk Score</div>
+            </div>
+        </section>
+
+        <!-- Action Bar -->
+        <section class="action-bar">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search vendors..." aria-label="Search vendors">
+            </div>
+            <button class="btn btn-primary" id="addVendorBtn">
+                <span class="btn-icon">+</span> Add Vendor
+            </button>
+        </section>
+
+        <!-- Filter Buttons -->
+        <section class="filter-section">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="red">High Risk</button>
+            <button class="filter-btn" data-filter="amber">Medium Risk</button>
+            <button class="filter-btn" data-filter="green">Low Risk</button>
+        </section>
+
+        <!-- Vendor Grid -->
+        <section class="vendor-grid" id="vendorGrid">
+            <!-- Vendor cards will be inserted here -->
+        </section>
+    </main>
+
+    <!-- Add/Edit Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="vendorModal">
+            <div class="modal-header">
+                <h2 id="modalTitle">Add New Vendor</h2>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <form id="vendorForm">
+                <input type="hidden" id="vendorId">
+                
+                <div class="form-group">
+                    <label for="vendorName">Vendor Name *</label>
+                    <input type="text" id="vendorName" required placeholder="e.g., Vercel, OpenAI, Anthropic">
+                </div>
+
+                <div class="form-group">
+                    <label for="dataAccessLevel">Data Access Level *</label>
+                    <select id="dataAccessLevel" required>
+                        <option value="">Select access level...</option>
+                        <option value="none">None</option>
+                        <option value="read-only">Read-only</option>
+                        <option value="read-write">Read-Write</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>OAuth Scopes</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="oauthScope" value="email"> Email
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="oauthScope" value="profile"> Profile
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="oauthScope" value="files"> Files
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="oauthScope" value="write"> Write
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="oauthScope" value="admin"> Admin
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Compliance Certifications</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="complianceCert" value="SOC2"> SOC 2
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="complianceCert" value="ISO27001"> ISO 27001
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="complianceCert" value="GDPR"> GDPR
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="complianceCert" value="HIPAA"> HIPAA
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Live Risk Preview -->
+                <div class="risk-preview" id="riskPreview">
+                    <div class="risk-preview-title">Estimated Risk Score</div>
+                    <div class="risk-score-display">
+                        <span class="score-number" id="previewScore">0</span>
+                        <span class="score-rating" id="previewRating">-</span>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="cancelBtn">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save Vendor</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Detail Panel -->
+    <div class="detail-panel-overlay" id="detailPanelOverlay">
+        <div class="detail-panel" id="detailPanel">
+            <button class="detail-panel-close" id="detailPanelClose">&times;</button>
+            <div class="detail-panel-content" id="detailPanelContent">
+                <!-- Content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
